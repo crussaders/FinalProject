@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+:root
+{
+    --Tcolor: #fff;
+    --backcolor: #0b412c;
+}
+body
+{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #0b412c;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#0c744c;
+    border-radius: 10px;
+  }
+header
+{
+    width: 100%;
+    height: 60px;
+    background:var(--backcolor);
+}
+header .container{
+    height: 100%;
+}
+header .container .logopart
+{
+    height: 100%;
+    align-items: center;
+}
+header .container .logopart a>h5{
+    letter-spacing: 2px;
+}
+.logo
+{
+    animation: rotate 2s infinite alternate;
+}
+@keyframes rotate {
+    0%
+    {
+        transform: translate(10px);
+    }
+    100%
+    {
+        transform: translate(-10px);
+    }
+}
+.login .row .col-12
+{
+    width: 100%;
+    height: 89.5vh;
+    background-image: url(loginpart.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.login .row .col-12::before
+{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60%;
+    height: 100%;
+    background-color:var(--backcolor);
+    opacity: 0.6; 
+    clip-path: polygon(26% 0, 100% 0%, 100% 100%, 0 100%);
+}
+.login .row .loginform
+{
+    background-color: var(--Tcolor);
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.7);
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+.login .row .loginform:hover
+{
+    transform: scale(1);
+}
+.login .row .loginform h3
+{
+    color: var(--backcolor);
+    letter-spacing: 2px;
+}
+.login .row .loginform form
+{
+    padding: 10px;
+    color: var(--backcolor);
+}
+.login .row .loginform label
+{
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.login .row .loginform button
+{
+    background-color: var(--backcolor);
+    color: var(--Tcolor);
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.login .row .loginform button:hover{
+    border: 2px solid var(--backcolor);
+    background-color: var(--Tcolor);
+    color: var(--backcolor);
+}
+/*HOMEPAGE*/
+.menu .nav
+{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.menu .nav li 
+{
+    height: 100%;
+}
+.menu .nav li:hover
+{
+    background-color: #082e1f;
+}
+.menu .nav li>a
+{
+    height: 100%;
+    display: block;
+    padding-top: 17px;
+    color: var(--Tcolor);
+    letter-spacing: 1px;
+}
+.nav-btn
+{
+    margin: 10px;
+    background-color:#0c744c;
+    color: var(--Tcolor);
+}
+.nav-btn:hover
+{
+    outline: 2px solid #0c744c;
+    background-color:var(--backcolor);
+    color: var(--Tcolor);
+}
+.section1
+{
+    width: 100%;
+    background-image: url(homepage.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+}
+.section1 h2
+{
+    color: var(--backcolor);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.homepart
+{
+    width: 85%;
+    display: flex;
+}
+.card-body
+{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-body h4
+{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--backcolor);
+}
+.card-body a
+{
+     background-color:var(--backcolor);
+     color: var(--Tcolor);
+}
+.card-body a:hover
+{
+    outline: 2px solid var(--backcolor);
+    color: var(--backcolor);
+    background-color: var(--Tcolor);
+}
+#sec2 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#sec2 form
+{
+   color: var(--backcolor);
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+#sec2 table thead
+{
+    background-color: var(--backcolor);
+    color: var(--Tcolor);
+    letter-spacing: 1px;
+}
+#sec2 table tbody 
+{
+    background-color: #fff;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+#sec2 .btn
+{
+    background-color: var(--backcolor);
+    color: var(--Tcolor);
+    display: block;
+    width: 200px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: auto;
+}
+#sec2 .btn:hover
+{
+    background: transparent;
+    outline: 2px solid var(--backcolor);
+    color: var(--backcolor);
+}
+.demand
+{
+   background-color: var(--Tcolor);
+   padding: 50px 20px;
+   border-radius: 5px;
+   box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+   margin-bottom: 30px;
+   transform: scale(0.9);
+   transition: 0.5s;
+}
+.demand:hover
+{
+    transform: scale(1);
+}
+.demand:nth-child(1) img
+{
+    width: 100%;
+}
+
+.demand h3
+{
+    color: var(--backcolor);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.form-group label
+{
+   color: var(--backcolor);
+}
+.log
+{
+    margin-top: -100px;
+    width: 400px;
+}
+.cardcolor
+{
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.cardcolor:hover
+{
+    transform: scale(1.1);
+}

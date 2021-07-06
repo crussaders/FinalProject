@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="<c:url value='/static/style.css'/>" rel="stylesheet">
+<title>Pharmacy Portal</title>
+</head>
+<body>
+<header>
+        <div class="container d-flex">
+            <div class="logopart d-flex mr-auto">
+                <img src="../static/plogo.png" alt="pharmacy logo" class="logo" width="50px">
+                <a accesskey="h" href="/pharmacy/home" class="text-decoration-none"><h5 class="ml-3 text-white font-weight-bold"><u>H</u>ealthClub Pharma</h5></a>
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li class="nav-item"><a accesskey="m" href="/pharmacy/schedule" class="nav-link"><u>M</u>R Schedule</a></li>
+                    <li class="nav-item"><a accesskey="p" href="/pharmacy/medicineDemand" class="nav-link"><u>P</u>lace Order</a></li>
+                    <li class="nav-item"><a accesskey="c" href="/pharmacy/medicineStock" class="nav-link"><u>C</u>heck Stock</a></li>
+                    <li class="nav-item"><a accesskey="v" href="/pharmacy/showMedicineSupply" class="nav-link"><u>V</u>iew Orders</a></li>
+                    <li class="nav-item"><a accesskey="d" href="/pharmacy/showMedicineDemand" class="nav-link"><u>D</u>emand</a></li>
+                </ul>
+            </div>
+            <a accesskey="l" href="/pharmacy/log" class="btn nav-btn"><u>L</u>ogout</a>
+        </div>
+    </header>
